@@ -17,8 +17,6 @@ const ItemListContainer = ({ saludo }) => {
 
     }, [])
 
-    console.log(products)
-
     return (
         <div className="itemlistcontainer">
             <h2>{saludo}</h2>

@@ -20,7 +20,7 @@ const products = [
     {
         id: "rk01",
         name: "Razer Huntsman V3 Pro",
-        description: "",
+        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae numquam asperiores nam minus deserunt in itaque, soluta consequatur autem error odit quae porro. Doloremque id laudantium, iste sed quidem enim!",
         stock: "",
         price: "250",
         image: "img/Razer Blackwidow V3 Pro.jpg",

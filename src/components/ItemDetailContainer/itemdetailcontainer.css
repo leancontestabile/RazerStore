@@ -1,0 +1,15 @@
+.itemDetail{
+    display: flex;
+    margin: 5%;
+    padding: 10px;
+    border: solid;
+    border-color: #00ff00;
+}
+
+.itemSpecs{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    padding: 10px;
+    margin-left: 10px;
+}
