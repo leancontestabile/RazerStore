@@ -1,7 +1,37 @@
-.greeting{
-    text-align: center;
+.itemlistcontainer {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
 }
-.greeting h2{
-    font-family: 'Razer Blackwidow', sans-serif;
+
+.itemlistcontainer h2{
+    text-align: center;
     color: aliceblue;
+}
+.itemlistcontainer p{
+    text-align: center;
+    color: aliceblue;
+}
+
+.itemlistcontainer .itemlist {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.itemlistcontainer .itemlist .item {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    border: solid;
+    border-color: #00ff00;
+}
+
+.itemlistcontainer .itemlist .item img{
+    width: 250px;
+    padding: 10px;
 }
