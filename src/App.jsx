@@ -11,7 +11,8 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route />
+          <Route path='/' element={ <ItemListContainer saludo="Bienvenidos a la tienda no oficial de razer" /> } />
+          <Route path='/category/:idCategory' element={ <ItemListContainer saludo="Category" /> } />
         </Routes>
       </BrowserRouter>
     </div>

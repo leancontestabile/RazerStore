@@ -6,7 +6,7 @@ const products = [
         stock: "10",
         price: "160",
         image: "img/Razer Viper V3 Pro.png",
-        category: "Mouse"
+        category: "mouse"
     },
     {
         id: "rm02",
@@ -15,7 +15,7 @@ const products = [
         stock: "15",
         price: "150",
         image: "img/Razer Deathadder V3 Pro.png",
-        category: "Mouse"
+        category: "mouse"
     },
     {
         id: "rk01",
@@ -24,7 +24,7 @@ const products = [
         stock: "10",
         price: "250",
         image: "img/Razer Blackwidow V3 Pro.jpg",
-        category: "Keyboard"
+        category: "keyboard"
     },
     {
         id: "rk02",
@@ -33,7 +33,7 @@ const products = [
         stock: "5",
         price: "120",
         image: "img/Razer Huntsman Mini.webp",
-        category: "Keyboard"
+        category: "keyboard"
     }
 ]
 
