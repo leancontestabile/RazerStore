@@ -18,6 +18,9 @@ const NavBar = () => {
                 <a>
                     <Link to="/category/keyboard">Teclados</Link>
                 </a>
+                <a>
+                    <Link to="/category/headset">Headsets</Link>
+                </a>
             </div>
 
             <CartWidget />
