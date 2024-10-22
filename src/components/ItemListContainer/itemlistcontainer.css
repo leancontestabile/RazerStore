@@ -30,6 +30,7 @@
     padding: 10px;
     border: solid;
     border-color: #00ff00;
+    text-decoration: none;
 }
 
 .itemlistcontainer .itemlist .item img{

@@ -26,4 +26,6 @@
     font-family: 'Razer Blackwidow', sans-serif;                                  
     font-size: x-large;
     cursor: pointer;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }

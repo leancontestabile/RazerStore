@@ -13,6 +13,9 @@ function App() {
         <Routes>
           <Route path='/' element={ <ItemListContainer saludo="Bienvenidos a la tienda no oficial de razer" /> } />
           <Route path='/category/:idCategory' element={ <ItemListContainer saludo="Category" /> } />
+          <Route path='/detail/:idProduct' element={ <ItemDetailContainer />} />
+          
+          <Route path='*' element={ <div>Error 404</div> } />
         </Routes>
       </BrowserRouter>
     </div>

@@ -14,7 +14,7 @@ const ItemListContainer = ({ saludo }) => {
             .then((dataProducts) => {
                 console.log(dataProducts)
                 if (idCategory) {
-                    const filterProducts = dataProducts.filter( (product) => product.category === idCategory)
+                    const filterProducts = dataProducts.filter((product) => product.category === idCategory)
                     setProducts(filterProducts)
                     console.log(filterProducts)
                 } else {

@@ -5,7 +5,7 @@ const products = [
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae numquam asperiores nam minus deserunt in itaque, soluta consequatur autem error odit quae porro. Doloremque id laudantium, iste sed quidem enim!",
         stock: "10",
         price: "160",
-        image: "img/Razer Viper V3 Pro.png",
+        image: "/img/Razer Viper V3 Pro.png",
         category: "mouse"
     },
     {
@@ -14,7 +14,7 @@ const products = [
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae numquam asperiores nam minus deserunt in itaque, soluta consequatur autem error odit quae porro. Doloremque id laudantium, iste sed quidem enim!",
         stock: "15",
         price: "150",
-        image: "img/Razer Deathadder V3 Pro.png",
+        image: "/img/Razer Deathadder V3 Pro.png",
         category: "mouse"
     },
     {
@@ -23,7 +23,7 @@ const products = [
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae numquam asperiores nam minus deserunt in itaque, soluta consequatur autem error odit quae porro. Doloremque id laudantium, iste sed quidem enim!",
         stock: "10",
         price: "250",
-        image: "img/Razer Blackwidow V3 Pro.jpg",
+        image: "/img/Razer Blackwidow V3 Pro.jpg",
         category: "keyboard"
     },
     {
@@ -32,7 +32,7 @@ const products = [
         description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae numquam asperiores nam minus deserunt in itaque, soluta consequatur autem error odit quae porro. Doloremque id laudantium, iste sed quidem enim!",
         stock: "5",
         price: "120",
-        image: "img/Razer Huntsman Mini.webp",
+        image: "/img/Razer Huntsman Mini.webp",
         category: "keyboard"
     }
 ]
