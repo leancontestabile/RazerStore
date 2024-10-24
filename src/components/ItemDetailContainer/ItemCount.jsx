@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const ItemCount = () => {
+const ItemCount = ({ stock }) => {
     const [contador, setContador] = useState(1)
 
     const restarContador = () => {
@@ -10,14 +10,16 @@ const ItemCount = () => {
     }
 
     const aumentarContador = () => {
-        setContador(contador + 1)
+        if (contador < stock) {
+            setContador(contador + 1)
+        }
     }
 
     return (
-        <div>
-            <button onClick={restarContador}>-</button>
+        <div className='contador'>
+            <button onClick={restarContador}> - </button>
             {contador}
-            <button onClick={aumentarContador}>+</button>
+            <button onClick={aumentarContador}> + </button>
         </div>
     )
 }
