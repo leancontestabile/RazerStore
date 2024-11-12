@@ -3,20 +3,24 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import './App.css'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { CartProvider } from './context/CartContext';
+import Cart from './components/Cart/Cart';
 
 function App() {
 
   return (
     <div>
       <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path='/' element={ <ItemListContainer saludo="Bienvenidos a la tienda no oficial de razer" /> } />
-          <Route path='/category/:idCategory' element={ <ItemListContainer saludo="Category" /> } />
-          <Route path='/detail/:idProduct' element={ <ItemDetailContainer />} />
-          
-          <Route path='*' element={ <div>Error 404</div> } />
-        </Routes>
+        <CartProvider>
+          <NavBar />
+          <Routes>
+            <Route path='/' element={<ItemListContainer saludo="Bienvenidos a la tienda no oficial de razer" />} />
+            <Route path='/category/:idCategory' element={<ItemListContainer saludo="Category" />} />
+            <Route path='/detail/:idProduct' element={<ItemDetailContainer />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path='*' element={<div>Error 404</div>} />
+          </Routes>
+        </CartProvider>
       </BrowserRouter>
     </div>
   )
