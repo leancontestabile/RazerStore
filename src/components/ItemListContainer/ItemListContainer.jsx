@@ -8,8 +8,10 @@ const ItemListContainer = ({ saludo }) => {
 
     const [products, setProducts] = useState([])
     const { idCategory } = useParams()
+    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
+        setLoading(true)
         getProducts()
             .then((dataProducts) => {
                 console.log(dataProducts)
@@ -22,14 +24,20 @@ const ItemListContainer = ({ saludo }) => {
                 }
             })
             .catch((error) => { console.log(error) })
-            .finally(() => { console.log("Finalizo la promesa") })
+            .finally(() => { setLoading(false) })
 
     }, [idCategory])
 
     return (
         <div className="itemlistcontainer">
             <h2>{saludo}</h2>
-            <ItemList products={products} />
+            {
+                loading === true ? (
+                    <h2>Cargando...</h2>
+                ) : (
+                    <ItemList products={products} />
+                )
+            }
         </div>
     )
 }
