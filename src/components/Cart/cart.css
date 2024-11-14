@@ -1,0 +1,33 @@
+.emptycart{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fullcart{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.fullcart h2{
+    display: flex;
+    justify-content: center;
+}
+
+.productcard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: solid;
+    border-color: #00ff00;
+    margin: 10px;
+}
+
+.productcard img{
+    width: 150px;
+}
+

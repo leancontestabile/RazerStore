@@ -8,6 +8,7 @@
 .cart p{
     font-size: large;
     padding-left: 10px;
+    color: black;
 }
 .cart img{
     cursor: pointer;
