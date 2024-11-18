@@ -1,18 +1,23 @@
-import { mixed, object, string } from "yup"
+import * as yup from 'yup';
 
-let userSchema = object({
-  fullname: string().required("El nombre es requerido"),
-  phone: mixed().required("El telefono es requerido"),
-  email: string().email("El mail debe tener @")
-})
+let userSchema = yup.object({
+  fullname: yup.string().required("El nombre es requerido"),
+  phone: yup.mixed().required("El teléfono es requerido"),
+  mail: yup.string()
+    .email("Formato de correo inválido")
+    .required("El correo electrónico es requerido"),
+  mailConfirmation: yup.string()
+    .oneOf([yup.ref('mail')], "El correo de confirmación debe coincidir con el correo electrónico")
+    .required("El correo de confirmación es requerido")
+});
 
-const validateForm = async(dataForm) => {
+const validateForm = async (dataForm) => {
   try {
-    await userSchema.validate(dataForm)
-    return { status: "success" }
+    await userSchema.validate(dataForm);
+    return { status: "success" };
   } catch (error) {
-    return { status: "error", message: error.message }
+    return { status: "error", message: error.message };
   }
-}
+};
 
-export default validateForm
+export default validateForm;

@@ -14,7 +14,8 @@ const Checkout = () => {
     const [dataForm, setDataForm] = useState({
         fullname: "",
         phone: "",
-        mail: ""
+        mail: "",
+        mailConfirmation: ""
     })
 
     const [idOrder, setIdOrder] = useState(null)
