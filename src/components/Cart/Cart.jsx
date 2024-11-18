@@ -7,14 +7,14 @@ import "./cart.css"
 const Cart = () => {
     const { cart, totalPrice, deleteProductById, deleteCart } = useContext(CartContext)
 
-if (cart.length === 0) {
-    return(
-        <div className='emptycart'>
-            <h2>No hay productos en el carrito</h2>
-            <Link to="/">Volver al inicio</Link>
-        </div>
-    )
-}
+    if (cart.length === 0) {
+        return (
+            <div className='emptycart'>
+                <h2>No hay productos en el carrito</h2>
+                <Link to="/">Volver al inicio</Link>
+            </div>
+        )
+    }
 
     return (
         <div className='fullcart'>
@@ -32,7 +32,10 @@ if (cart.length === 0) {
                 ))
             }
             <h2>Precio total: {totalPrice()}</h2>
-            <button onClick={deleteCart}>Borrar carrito</button>
+            <div className='controlCart'>
+                <button onClick={deleteCart}>Borrar carrito</button>
+                <Link to="/checkout">Terminar compra</Link>
+            </div>
         </div>
     )
 }

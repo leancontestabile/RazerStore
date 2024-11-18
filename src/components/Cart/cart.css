@@ -16,6 +16,18 @@
     justify-content: center;
 }
 
+.fullcart .controlCart{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fullcart .controlCart a{
+    font-size: larger;
+}
+.fullcart .controlCart button{
+    font-size: larger;
+}
+
 .productcard{
     display: flex;
     flex-direction: row;
