@@ -2,7 +2,7 @@ import * as yup from 'yup';
 
 let userSchema = yup.object({
   fullname: yup.string().required("El nombre es requerido"),
-  phone: yup.mixed().required("El teléfono es requerido"),
+  phone: yup.string().required("El teléfono es requerido"),
   mail: yup.string()
     .email("Formato de correo inválido")
     .required("El correo electrónico es requerido"),
